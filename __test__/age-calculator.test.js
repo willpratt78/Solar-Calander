@@ -60,12 +60,19 @@ describe ('AgeCalculator', () => {
     expect(age.lifeExpectancy).toEqual(53.2)
   });
 
-
   test('should return the how much past the lifeExpectancy on Venus user has lived', () => {
     const age = new AgeCalculator(61, 60)
     const remainingAge = age.lifeExpectancy - age.age
     age.age = remainingAge
     age.lifeExpectancyVenus()
     expect(age.lifeExpectancy).toEqual(1.6)
+  });
+
+  test('should return the user lifeExpectancy on Mars', () => {
+    const age = new AgeCalculator(27, 60)
+    const remainingAge = age.lifeExpectancy - age.age
+    age.age = remainingAge
+    age.lifeExpectancyMars()
+    expect(age.lifeExpectancy).toEqual(17.6)
   });
 })
