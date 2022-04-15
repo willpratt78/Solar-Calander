@@ -14,7 +14,7 @@ describe ('MercuryAge', () => {
     expect(info.input).toEqual(24)
   })
 
-    test('should return the age on Mercury', () => {
+    test('should return the age on Mercury rounded to the firt decimal place', () => {
       const info = new Mercury(27)
       info.adjustedAge();
       expect(info.mercuryAge).toEqual(112.5)
