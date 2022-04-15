@@ -31,13 +31,19 @@ export class AgeCalculator {
   lifeExpectancyMercury(age, lifeExpectancy) {
     this.mercuryAge();
     this.lifeExpectancy = Math.abs(this.mercuryAge());
+  
   }
   lifeExpectancyVenus(age, lifeExpectancy) {
     this.venusAge();
     this.lifeExpectancy = Math.abs(this.venusAge());
+  
   }
   lifeExpectancyMars(age, lifeExpectancy) {
     this.marsAge();
     this.lifeExpectancy = Math.abs(this.marsAge());
+  }
+
+  lifeExpectancyJupiter(age, lifeExpectancy) {
+    
   }
 }
