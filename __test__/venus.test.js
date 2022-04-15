@@ -9,6 +9,6 @@ describe ('Venus', () => {
   test('should return the age on Venus rounded to the firt decimal place', () => {
     const info = new Venus(27)
     info.adjustedAge();
-    expect(info.mercuryAge).toEqual(43.5)
+    expect(info.venusAge).toEqual(43.5)
   });
 })
