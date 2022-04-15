@@ -29,6 +29,7 @@ export class AgeCalculator {
   }
 
   lifeExpectancyMercury(age, lifeExpectancy) {
-
+    this.remainingAge = this.lifeExpectancy - this.age
+    let remain = this.mercuryAge.bind(this.remainingAge)
   }
 }
