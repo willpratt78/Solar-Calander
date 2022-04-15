@@ -34,6 +34,6 @@ export class AgeCalculator {
   }
   lifeExpectancyVenus(age, lifeExpectancy) {
     this.venusAge();
-    this.lifeExpectancy = this.venusAge();
+    this.lifeExpectancy = Math.abs(this.venusAge());
   }
 }

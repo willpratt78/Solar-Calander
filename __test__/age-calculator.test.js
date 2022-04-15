@@ -61,7 +61,7 @@ describe ('AgeCalculator', () => {
   });
 
 
-  test('should return the how much past the lifeExpectancy on Mercury user has lived', () => {
+  test('should return the how much past the lifeExpectancy on Venus user has lived', () => {
     const age = new AgeCalculator(61, 60)
     const remainingAge = age.lifeExpectancy - age.age
     age.age = remainingAge
