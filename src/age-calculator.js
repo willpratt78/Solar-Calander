@@ -32,4 +32,6 @@ export class AgeCalculator {
     this.mercuryAge();
     this.lifeExpectancy = Math.abs(this.mercuryAge());
   }
+  lifeExpectancyVenus(age, lifeExpectancy) {
+  }
 }

@@ -52,4 +52,12 @@ describe ('AgeCalculator', () => {
     console.log(age.lifeExpectancyMercury())
     expect(age.lifeExpectancy).toEqual(4.2)
   });
+
+  test('should return the user lifeExpectancy on Venus', () => {
+    const age = new AgeCalculator(27, 60)
+    const remainingAge = age.lifeExpectancy - age.age
+    age.age = remainingAge
+    age.lifeExpectancyVenus()
+    expect(age.lifeExpectancy).toEqual(53.2)
+  });
 })
