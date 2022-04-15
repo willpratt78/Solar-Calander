@@ -49,7 +49,6 @@ describe ('AgeCalculator', () => {
     const remainingAge = age.lifeExpectancy - age.age
     age.age = remainingAge
     age.lifeExpectancyMercury()
-    console.log(age.lifeExpectancyMercury())
     expect(age.lifeExpectancy).toEqual(4.2)
   });
 
@@ -59,5 +58,14 @@ describe ('AgeCalculator', () => {
     age.age = remainingAge
     age.lifeExpectancyVenus()
     expect(age.lifeExpectancy).toEqual(53.2)
+  });
+
+
+  test('should return the how much past the lifeExpectancy on Mercury user has lived', () => {
+    const age = new AgeCalculator(61, 60)
+    const remainingAge = age.lifeExpectancy - age.age
+    age.age = remainingAge
+    age.lifeExpectancyVenus()
+    expect(age.lifeExpectancy).toEqual(1.6)
   });
 })
