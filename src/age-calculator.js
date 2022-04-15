@@ -1,5 +1,5 @@
 export class AgeCalculator {
-  constructor(age) {
+  constructor(age, lifeExpectancy) {
     this.age = age
   };
 
