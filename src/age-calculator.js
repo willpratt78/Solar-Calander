@@ -30,7 +30,6 @@ export class AgeCalculator {
 
   lifeExpectancyMercury(age, lifeExpectancy) {
     this.mercuryAge();
-    this.lifeExpectancy = this.mercuryAge();
-    return this.lifeExpectancy
+    this.lifeExpectancy = Math.abs(this.mercuryAge());
   }
 }
