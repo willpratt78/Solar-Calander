@@ -1,6 +1,7 @@
 export class AgeCalculator {
   constructor(age, lifeExpectancy) {
-    this.age = age
+    this.age = age;
+    this.lifeExpectancy = lifeExpectancy;
   };
 
   mercuryAge(age) {
