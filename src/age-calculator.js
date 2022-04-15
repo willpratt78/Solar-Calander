@@ -8,4 +8,8 @@ export class AgeCalculator {
     this.mercuryAgeRounded = Math.round(this.fullMercuryAge * 10) / 10;
     return this.mercuryAgeRounded;
   };
+
+  venusAge(age) {
+  
+  }
 }
