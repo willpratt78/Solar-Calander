@@ -18,4 +18,9 @@ describe ('AgeCalculator', () => {
     info.venusAge();
     expect(info.venusAgeRounded).toEqual(43.5)
   });
+  test('should return the age on Mars rounded to the firt decimal place', () => {
+    const info = new AgeCalculator(27)
+    info.marsAge();
+    expect(info.marsAgeRounded).toEqual(14.4)
+  })
 })

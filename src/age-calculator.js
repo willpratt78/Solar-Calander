@@ -14,4 +14,8 @@ export class AgeCalculator {
     this.venusAgeRounded = Math.round(this.fullVenusAge * 10) / 10;
     return this.venusAgeRounded;
   }
+
+  marsAge(age) {
+    
+  }
 }
