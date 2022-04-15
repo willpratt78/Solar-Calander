@@ -38,6 +38,6 @@ export class AgeCalculator {
   }
   lifeExpectancyMars(age, lifeExpectancy) {
     this.marsAge();
-    this.lifeExpectancy = this.marsAge();
+    this.lifeExpectancy = Math.abs(this.marsAge());
   }
 }
