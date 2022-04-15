@@ -45,6 +45,6 @@ export class AgeCalculator {
 
   lifeExpectancyJupiter(age, lifeExpectancy) {
     this.jupiterAge();
-    this.lifeExpectancy = this.jupiterAge();
+    this.lifeExpectancy = Math.abs(this.jupiterAge());
   }
 }
