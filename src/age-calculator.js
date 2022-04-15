@@ -16,6 +16,8 @@ export class AgeCalculator {
   }
 
   marsAge(age) {
-    
+    this.fullMarsAge = this.age * (1 / 1.88);
+    this.marsAgeRounded = Math.round(this.fullMarsAge * 10) / 10;
+    return this.marsAgeRounded;
   }
 }
