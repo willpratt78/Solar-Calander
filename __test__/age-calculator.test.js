@@ -14,13 +14,20 @@ describe ('AgeCalculator', () => {
   });
 
   test('should return the age on Venus rounded to the firt decimal place', () => {
-    const info = new AgeCalculator(27)
-    info.venusAge();
-    expect(info.venusAgeRounded).toEqual(43.5)
+    const age = new AgeCalculator(27)
+    age.venusAge();
+    expect(age.venusAgeRounded).toEqual(43.5)
   });
+
   test('should return the age on Mars rounded to the firt decimal place', () => {
-    const info = new AgeCalculator(27)
-    info.marsAge();
-    expect(info.marsAgeRounded).toEqual(14.4)
+    const age = new AgeCalculator(27)
+    age.marsAge();
+    expect(age.marsAgeRounded).toEqual(14.4)
+  })
+
+  test('should return the age on Jupiter rounded to the firt decimal place', () => {
+    const age = new AgeCalculator(27)
+    age.jupiterAge();
+    expect(age.jupiterAgeRounded).toEqual(2.3)
   })
 })

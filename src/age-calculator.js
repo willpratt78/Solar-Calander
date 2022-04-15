@@ -20,4 +20,8 @@ export class AgeCalculator {
     this.marsAgeRounded = Math.round(this.fullMarsAge * 10) / 10;
     return this.marsAgeRounded;
   }
+
+  jupiterAge(age) {
+    
+  }
 }
