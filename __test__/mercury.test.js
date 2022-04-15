@@ -11,7 +11,7 @@ describe ('MercuryAge', () => {
 
   test('should return the input of the person', () => {
     const info = new MercuryAge(24)
-    expect(info.input).toEqual("24")
+    expect(info.input).toEqual(24)
     
   })
 })
