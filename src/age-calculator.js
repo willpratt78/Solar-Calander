@@ -27,4 +27,8 @@ export class AgeCalculator {
     this.jupiterAgeRounded = Math.round(this.fullJupiterAge * 10) / 10;
     return this.jupiterAgeRounded;
   }
+
+  lifeExpectancyMercury(age, lifeExpectancy) {
+
+  }
 }

@@ -33,7 +33,12 @@ describe ('AgeCalculator', () => {
 
   test('should return the user input age and lifeExpectancy', () => {
     const age = new AgeCalculator(27, 54)
-    console.log(age)
     expect(age.lifeExpectancy).toEqual(54)
+  });
+
+  test('should return the user lifeExpectancy on Mercury', () => {
+    const age = new AgeCalculator(27, 60)
+    age.lifeExpectancyMercury()
+    expect(age.lifeExpectancy).toEqual(137.5)
   });
 })
