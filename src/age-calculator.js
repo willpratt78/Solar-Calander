@@ -22,6 +22,8 @@ export class AgeCalculator {
   }
 
   jupiterAge(age) {
-    
+    this.fullJupiterAge = this.age * (1 / 11.86);
+    this.jupiterAgeRounded = Math.round(this.fullJupiterAge * 10) / 10;
+    return this.jupiterAgeRounded;
   }
 }
