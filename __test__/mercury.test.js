@@ -7,7 +7,7 @@ describe ('Constructor name', () => {
   })
 })
 
-describe ('MercuryAge', () => {
+describe ('Mercury', () => {
 
   test('should return the input of the person', () => {
     const info = new Mercury(24)
@@ -21,3 +21,4 @@ describe ('MercuryAge', () => {
     })
 
 })
+
