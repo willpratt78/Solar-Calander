@@ -1,4 +1,4 @@
-import {Mars} from "../src/mercury.js";
+import {Mars} from "../src/mars.js";
 
 describe ('Mars', () => {
 
