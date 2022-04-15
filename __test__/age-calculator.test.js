@@ -38,6 +38,8 @@ describe ('AgeCalculator', () => {
 
   test('should return the user lifeExpectancy on Mercury', () => {
     const age = new AgeCalculator(27, 60)
+    const remainingAge = age.lifeExpectancy - age.age
+    age.age = remainingAge
     age.lifeExpectancyMercury()
     expect(age.lifeExpectancy).toEqual(137.5)
   });
