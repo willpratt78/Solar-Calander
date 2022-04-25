@@ -24,7 +24,11 @@ This application will calculate your age and life expectancy on the following pl
 ## Setup/Installation Requirements
 
 * Navigate to Repository and clone repo
-* open in VSC git gitbash
+* open in VSC with gitbash
+* In VSC terminal run npm install
+* In VSC terminal run npm test to see test made
+* In VSC terminal run npm run build
+* In VSC terminal run npm run start
 
 ## Known Bugs
 
