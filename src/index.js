@@ -12,5 +12,5 @@ $("user-info").on( "click", function (event) {
   let inputtedAge = $("#age").val();
   let inputtedExpectancy = $("life-expectency").val();
   let info = new AgeCalculator(inputtedAge, inputtedExpectancy);
-  console.log(info)
+  return info;
 });
